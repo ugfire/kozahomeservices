@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Koza</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 class="display-2 text-primary py-3 pb-5">Koza Services</h1>
+    <div class="row" id="card-container">
+      <!-- Bootstrap cards will be dynamically generated here -->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    // SheetDB API URL with sheet name and API key
+    const sheetdbUrl = "https://sheetdb.io/api/v1/bbeg67t9p4vhs";
+
+    // Fetch data from SheetDB API
+    fetch(sheetdbUrl)
+      .then(response => response.json())
+      .then(data => {
+        // Iterate over data and create Bootstrap cards
+        data.forEach(item => {
+          const cardHtml = `
+          <div class="col-md-4 col-sm-1">
+  <div class="card border-0 shadow">
+    <div class="card-body">
+      <h5 class="text-danger h3">${item.title}</h5>
+      <p class="card-text">${item.description}</p>
+      <div class="crop-img-wrapper">
+      <img class="card-img-bottom pt-3 crop-img" src="${item.image_link}" alt="picture">
+    </div>
+    </div>
+  
+    <p class="text-center py-3"><a href="contact.html" class="btn btn-primary">Inquire</a></p>
+  </div>
+</div>
+
+          
+          `;
+          $("#card-container").append(cardHtml); // Append card HTML to container
+        });
+      })
+      .catch(error => console.log(error)); // Handle error
+  </script>
+</body>
+</html>

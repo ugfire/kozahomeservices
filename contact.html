@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SheetDB Contact Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      /* Style for success alert */
+      .alert-success {
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        padding: .75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+      }
+
+      /* Style for error alert */
+      .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        padding: .75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h1 class="text-center mb-4">Contact Us</h1>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="SHEETDB.js"></script>
+  </body>
+</html>

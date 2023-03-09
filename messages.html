@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SheetDB Table Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Koza Client Messages</h1>
+      <p class="lead text-center" > TOTAL: <span id="total-rows"></span> Messages</p>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+    // SheetDB API URL with sheet name and API key
+    const sheetdbUrl = "https://sheetdb.io/api/v1/xk4526495z3zp";
+
+    // Fetch data from SheetDB API
+    axios.get(sheetdbUrl)
+      .then(response => {
+        let count = response.data.length;
+        let totalRows = document.querySelector("#total-rows");
+        totalRows.innerHTML = count;
+      })
+      .catch(error => alert("Error: " + error.message)); // Handle error
+  </script>
+
+  
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        axios.get("https://sheetdb.io/api/v1/xk4526495z3zp")
+          .then(function(response) {
+            let messages = response.data.reverse(); // Reverse the data array to show the rows in reverse order
+            let tbody = document.querySelector("tbody");
+            let idCounter = 1; // Initialize the ID counter to 1
+            for (let i = 0; i < messages.length; i++) {
+              let message = messages[i];
+              let tr = document.createElement("tr");
+              tr.innerHTML = `
+                <td>${idCounter}</td>
+                <td>${message.name}</td>
+                <td>${message.email}</td>
+                <td><a href="TEL:${message.phone}">${message.phone}</a>  </td>
+                <td>${message.message}</td>
+                <td>${message.date}</td>
+              `;
+              tbody.appendChild(tr);
+              idCounter++; // Increment the ID counter
+            }
+          })
+          .catch(function(error) {
+              alert("Error: " + error.message);
+          });
+      </script>
+      
+      
+  </body>
+</html>
