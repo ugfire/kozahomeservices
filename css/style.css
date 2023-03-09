@@ -826,7 +826,7 @@
      font-size: 12px;
 }
 .menu-area-main li.active a {
-     color: #538d2e;
+     color: #0613a8;
      }
 
  .main-menu {
@@ -1007,7 +1007,7 @@ width: 24%;
     color: #020500
   }
  .text-bg h1 {
-    color: #43960f;
+    color: #0f1c96;
 padding-top: 10px;
 font-size: 71px;
 line-height: 85px;
@@ -1117,7 +1117,7 @@ margin-right: 10px;
 
 .carousel-caption {position: inherit;}
 .carousel-indicators .active {
-    background-color: #3e9604;
+    background-color: #041596;
 
 }
 .carousel-item{
@@ -1191,8 +1191,8 @@ border-radius: 30px;
 
 
  .about .about-box a:hover{ 
-     background-color: #428713;
-     border: #428713 solid 1px;
+     background-color: #133887;
+     border: #132a87 solid 1px;
     color: #fff;
  }
  .about .about-box_img figure {
@@ -1307,7 +1307,7 @@ text-align: right;
 .clients_red {
      background: #fff;
      padding-bottom: 50px;
-     background: url(../images/tes.jpg);
+     background: url(../images/cleaning.jpeg);
      min-height: 978px;
      width: 100%;
      background-repeat: no-repeat;
@@ -1590,5 +1590,51 @@ transition: all 0.3s ease-in;
  .copyright a:hover {
      color: #ff7e1d ;
 }
+
+.bg-primary{
+    background-color: #0f1c96 !important;
+}
+
+.text-primary{
+    color: #0f1c96 !important;
+}
+
+.btn-primary{
+    background-color: #0f1c96 !important;
+    color: #ffffff !important;
+}
+
+.menu-area {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  
+  .menu-area-main {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+  .menu-area-main {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+
+  .menu-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .limit-box {
+    padding-right: 30px;
+  }
+  
+
+
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/

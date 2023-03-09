@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://kit.fontawesome.com/6e95959b6b.js" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KJXJBDQ3G"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -43,41 +44,40 @@
   <!-- header -->
   <header>
     <!-- header inner -->
-    <div class="header-top" id="top">
-      <div class="header">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-3 col logo_section">
-              <div class="full">
-                <div class="center-desk">
-                  <div class="logo">
-                    <a href="index.html"><img src="images/logo.png"  width="100px" alt="#" /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-10 col-lg-8 col-md-8 col-sm-9">
-         
-               <div class="menu-area">
-                <div class="limit-box">
-                  <nav class="main-menu ">
-                    <ul class="menu-area-main">
-                      <li class="active"> <a href="index.html">Home</a> </li>
-                      <li> <a href="#about">About</a> </li>
-                      <li> <a href="#vegetable">Technology</a> </li>
-                      <li> <a href="#testimonial">Team</a> </li>
-                      <li> <a href="gallery.html">Gallery</a> </li>
-                      <li> <a href="contact.html">Contact Us</a> </li>
-                     
-                        </ul>
-                   </nav>
-                 </div>
-               </div> 
-              </div>
-           </div>
-         </div>
-       </div>
-     </div>
+  
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" style="width:70px;" alt="Company Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vegetable"><i class="fas fa-cog"></i> Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial"><i class="fas fa-users"></i> Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+  
      <!-- end header inner -->
 
      <!-- end header -->
@@ -154,18 +154,18 @@ button.addEventListener("click", function() {
                       
                       <h1 class="text-dark">Our Vision</h1>
                      <p>
-                    To be the leader in sustainable fresh food production in the pearl of Africa.
+                      Welcome to our cleaning company website! We are a leading provider of cleaning services in Uganda, with years of experience in delivering top-notch cleaning services to homes and businesses. Our commitment to excellence has made us a trusted name in the industry, and we are proud to serve our clients with the highest standards of cleanliness and professionalism.
                      </p>
-                     <p class="fw-bold text-danger" style="font-style: italic; font-size: 150%;">
-"Dare to believe !"
+                     <p class="fw-bold text-danger h4" style="font-style: italic;">
+"We leave your home/office sparkling clean"
                      </p>
-                     <a href="gallery.html">SEE FARM PICTORIAL</a> 
+                     <a href="gallery.html">SEE PICTORIAL</a> 
                     </div>
                   </div>
 
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <div class="w-100">
-                      <figure><img src="images/logo.png" ></figure>
+                      <figure><img src="images/logo.png" class="w-75"></figure>
                     </div>
                   </div>
                 </div>
@@ -201,16 +201,16 @@ button.addEventListener("click", function() {
     <div class="row">
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
         <div class="about-box">
-          <h2>What we do
+          <h2 class="display-4 text-primary py-3 bg-light">What we do
           </h2>
            
-          <p> 
-            Our crops include Watermelon, onions, tomatoes, beans, peas and other legumes.
+          <p class="pb-3"> 
+            At our company, we offer a wide range of cleaning services to meet the needs of our clients. Whether you need general cleaning services for your office, specialized cleaning services for your restaurant, or residential cleaning services for your home, we've got you covered. Our team of skilled cleaners is equipped with the latest cleaning equipment and products to ensure that every corner of your space is cleaned to perfection.
             <br>
 
             We also have interests in breeding of Boran cattle as well as local goats for meat production.
           </p>
-          <a href="contact.html">Contact us</a>
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
@@ -227,250 +227,62 @@ button.addEventListener("click", function() {
 
 
 <!-- vegetable -->
-<div id="vegetable" class="vegetable">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div  class="titlepage">
-          <h2> Modern  technology</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
-        <div class="vegetable_shop">
-          <h3>Solar Irrigation</h3>
-          <p>
-            To supplement the constant supply of water from the river Nyamugasani, we use solar pumps to water our crops. This helps us save both time and money as the solar pumps are cost-efficient and use recyclable solar energy.
-          </p>
-        </div>
-      </div>
-       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
-        <div class="vegetable_img">
-          <video width="300"  controls>
-            <source src="videos/olum.mp4" type="video/mp4">
-            <source src="videos/olum.mp4" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-         <span>01</span>
-        </div>
-      </div>
-  
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
-        <div class="vegetable_shop">
-          <h3>Modern Ploughing</h3>
-          <p>
-          The traditional methods used in Uganda to plough were human hands with hoes, and for those who can afford they use oxen. We use tractors on our farms because they are much faster and more efficient. They also have lower risk of injuries on the farm. However, we supplement this with the traditional methods where possible so that we give jobs to the locals.       </p>
-        </div>
-      </div>
-   
-      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
-        <div class="vegetable_img margin_top">
-          <video width="300"  controls>
-            <source src="videos/tractor1.mp4" type="video/mp4">
-            <source src="videos/tractor2.mp4" type="video/ogg">
-          Your browser does not support the video tag.
-          </video>
-         <span>02</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end vegetable -->
-
-
-
-
-   <!-- clients -->
-    <div id="testimonial" class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>Our team</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="clients_red">
-        <div class="container">
-            <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#testimonial_slider" data-slide-to="0" class=""></li>
-                    <li data-target="#testimonial_slider" data-slide-to="1" class="active"></li>
-                    <li data-target="#testimonial_slider" data-slide-to="2" class=""></li>
-                    <li data-target="#testimonial_slider" data-slide-to="3" class=""></li>
-                </ul>
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <div class="testomonial_section">
-
-                            <div class="full testimonial_cont">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
-                                        <div class="testomonial_img">
-                                            
-                                            <i><img src="images/team/timothy.jpeg" alt="#"/></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
-                                        <div class="cross_inner">
-                                          <h3>Omondo Timothy Ochieng<br><p class="text-warning mt-1" >Managing Director</p></h3>
-                                          <p>We have a rich team of industry professionals fully equipped to execute the company goals and initiatives at any one time.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item active">
-
-                        <div class="testomonial_section">
-                            <div class="full center">
-                            </div>
-                            <div class="full testimonial_cont ">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
-                                        <div class="testomonial_img">
-                                            
-                                            <i><img src="images/team/jackie.jpeg" alt="#"/></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
-                                        <div class="cross_inner">
-                                            <h3>Jackie Walliggo<br><p class="text-warning mt-1" >Projects Manager</p></h3>
-                                            <p>
-                                              We implement modern & international project management techniques to run all our farms and ensure maximum output and happy workers at the same time.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-
-                        <div id="testomonial" class="testomonial_section">
-                            <div class="full center">
-                            </div>
-                            <div class="full testimonial_cont ">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
-                                        <div class="testomonial_img">
-                                            
-                                            <i><img src="images/team/mary.jpeg" alt="#"/></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
-                                        <div class="cross_inner">
-                                            <h3>Mary Abbo<br><p class="text-warning mt-1" >Finance and Operations, ACCA</p></h3>
-                                            <p>
-                                              By implementing industry standard techniques as defined by the  Association of Chartered Certified Accountants, we believe in and manage our funds with approved international financial principals and tools.                                              
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-
-                      <div id="testomonial" class="testomonial_section">
-                          <div class="full center">
-                          </div>
-                          <div class="full testimonial_cont ">
-                              <div class="row">
-                                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 pa_right">
-                                      <div class="testomonial_img">
-                                          
-                                          <i><img src="images/team/oswan.jpeg" alt="#"/></i>
-                                      </div>
-                                  </div>
-                                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 pa_left">
-                                      <div class="cross_inner">
-                                          <h3>Oswan Owese Benjamin<br><p class="text-warning mt-1" >Legal duties, LLB</p></h3>
-                                          <p>
-                                         Our company operates and subscribes under the institution of the republic of Uganda, and this is reflected in all the work and dealings that we engage in.      </p>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-  
-    <!-- end clients -->
-
-
-
-
-<!-- contact -->
-<div id="contact" class="contact">
-  <div class="container">
-   <div class="row">
-     <div class="col-md-12">
-                <div class="titlepage">
-                  <h2>Contact <strong class="llow">us</strong></h2>
-                </div>
-   </div>
-
-</div>
-    <div class="white_color">
+<div id="services" class="services">
+  <section class="services-section">
+    <div class="container">
       <div class="row">
-
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-           <form class="contact_bg">
-            <div class="row">
-              <div class="col-md-12">
-              
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Email" type="text" name="Email">
-                </div>
-                <div class="col-md-12">
-                  <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <button class="send">Send</button>
-                </div>
-              </div>
-            </form>
-          </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-broom display-3"></i><br>Cleaning Services</h4>
+              <p class="card-text">We offer a wide range of cleaning services for homes, offices, and commercial spaces. Our team is trained to provide efficient and thorough cleaning services that leave your space spotless.</p>
             </div>
-      
-        
           </div>
         </div>
-
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-soap display-3"></i><br>Laundry Services</h4>
+              <p class="card-text">We provide professional laundry services for individuals, hotels, and other businesses. Our team ensures that your clothes are cleaned, ironed, and folded to perfection.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-hand-sparkles display-3"></i><br>Sanitization Services</h4>
+              <p class="card-text">We use high-quality sanitization products and techniques to ensure that your space is free from germs and bacteria. Our team is trained to provide safe and effective sanitization services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-tools display-3"></i><br>Maintenance Services</h4>
+              <p class="card-text">We provide a variety of maintenance services, including painting, plumbing, and electrical work. Our team is skilled and experienced in handling a range of maintenance tasks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-window-restore display-3"></i><br>Window Cleaning Services</h4>
+              <p class="card-text">We specialize in providing high-quality window cleaning services for both residential and commercial properties. Our team uses specialized equipment and techniques to ensure that your windows are sparkling clean.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-car display-3"></i><br>Car Cleaning Services</h4>
+              <p class="card-text">We offer professional car cleaning services, including interior and exterior cleaning, detailing, and waxing. Our team is equipped with the tools and products necessary to make your car shine like new.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-</div>
+  </section>
+   
 </div>
     <!-- end contact -->
 
@@ -480,7 +292,7 @@ button.addEventListener("click", function() {
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-             <a href="#" class="logo_footer"> <img src="images/olumgroup.jpg" alt="#" width="100px"/></a>
+             <a href="#" class="logo_footer"> <img src="images/logow.png" alt="#" width="100px"/></a>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
@@ -492,9 +304,9 @@ button.addEventListener("click", function() {
                         <a href="#" class="text-warning"></a>We shall be glad to hear from you 
                          </li>
                         <li>
-                          Tel: +256 (0) 773241258,  +256 (0) 706189382</li>
+                          Tel: 0742 104 760 ,    0774 196913</li>
                           <li>
-                            Email: olumfarm@gmail.com</li>
+                            Email: kozahomeservices@gmail.com</li>
                           </ul>
                         </div>
                       </div>
@@ -502,9 +314,8 @@ button.addEventListener("click", function() {
                         <div class="address">
                           <h3>Address</h3>
                           <ul class="Menu_footer">
-                            <li class="active"> <a class="text-white">Nyakabirizi </a> </li>
-                            <li class="active"> <a class="text-white">Off Mpondwe Rd</a></li>
-                            <li class="active"> <a class="text-white">Kasese-Uganda</a></li>
+                            <li class="active"> <a class="text-white">Kampala (U)</a> </li>
+                           
                           
                           </ul>
                         </div>
@@ -516,7 +327,7 @@ button.addEventListener("click", function() {
                           <h3>Newsletter</h3>
                            <form class="news">
                            <input class="newslatter" placeholder="Enter your email" type="text" name=" Enter your email">
-                            <button class="submit">Subscribe</button>
+                            <button class="btn-primary btn-lg border-0">Subscribe</button>
                             </form>
                         </div>
                       </div>
@@ -526,11 +337,11 @@ button.addEventListener("click", function() {
                 </div>
 
               </div>
-              <div class="copyright">
+              <div class="copyright btn-primary">
           <p class="text-center mb-3">
-            <a href="#top" class="btn mx-auto btn-dark text-center">Back to top</a>
+            <a href="#top" class="btn mx-auto btn-light text-dark text-center">Back to top</a>
            
-          </p>           <div class="container">
+          </p>           <div class="container ">
                   <p>Website designed by <a href="https://ayshinventions.com">Aysh Inventions Ltd</a></p>
                 </div>
               </div>
