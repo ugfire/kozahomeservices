@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>Koza Home Services</title>
+  <meta name="keywords" content="Koza home services, cleaning, moving in, Uganda, kozahomeservices.com, www.kozahomeservices.com">
+  <meta name="description" content="We help you create a clean environment to live/ work in.">
+  <link rel="icon" href="favicon.png" type="image/gif" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+  <meta name="author" content="Aysh inventions Ltd">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">  
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://kit.fontawesome.com/6e95959b6b.js" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KJXJBDQ3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9KJXJBDQ3G');
+</script>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+
+  <!-- header -->
+  <header>
+    <!-- header inner -->
+  
+    <nav class="navbar navbar-expand-md navbar-white bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" style="width:70px;" alt="Company Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vegetable"><i class="fas fa-cog"></i> Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial"><i class="fas fa-users"></i> Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+     <!-- end header inner -->
+
+     <!-- end header -->
+     <section class="slider_section">
+      <div id="myCarousel" class="carousel slide mt-0" data-ride="carousel">
+        <div>
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" style=" position: relative; bottom: 0; left: 0; " data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel"  style=" position:relative; bottom: 0; right: 0; " data-slide-to="1" class="active"></li>
+                 </ol>
+         
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="container-fluid padding_dd">
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="text-bg">
+                        <h1 class="text-primary">Koza Home Services</h1>
+
+                      <p>
+                        Welcome to Koza Home Services, a premier home cleaning company in Uganda! We are dedicated to providing our clients with exceptional cleaning services that leave their homes sparkling clean and fresh. Our team of skilled and experienced cleaners are committed to delivering high-quality workmanship and customer satisfaction.
+                        </p>  
+                        <button id="myButton" class="btn-primary btn">Read More</button>
+                        <p id="myParagraph" style="display:none;">   We offer a wide range of cleaning services to meet the unique needs of our clients. Our services include light cleaning, deep cleaning, move-in/move-out cleaning, and post-construction cleaning, Sofa cleaning,Pavers and rooftiles cleaning . Whether you need a one-time cleaning or light cleaning services, we have you covered.
+                        
+                        At Koza Cleaning Services, we understand that your home is your sanctuary, and that's why we take great care in ensuring that we use only the safest and most effective cleaning products and methods. Our cleaners are fully trained and equipped with the latest cleaning tools and equipment to ensure that your home is thoroughly cleaned and sanitized.
+                        
+                        We pride ourselves on our attention to detail and our ability to customize our cleaning services to meet the unique needs of each of our clients. Our team of cleaners is reliable, trustworthy, and committed to delivering outstanding customer service. We guarantee that you will be satisfied with our cleaning services, and we stand behind our work with a satisfaction guarantee.
+                        
+                        Contact us today to schedule your next cleaning appointment. We offer competitive pricing and flexible scheduling to accommodate your busy lifestyle. We have Day shifts, Night shifts, Evening shifts... <br>Let us help you maintain a clean and healthy home that you can be proud of.
+                      </p>
+                 <script>
+               const button = document.getElementById("myButton");
+const paragraph = document.getElementById("myParagraph");
+
+button.addEventListener("click", function() {
+  if (paragraph.style.display === "none") {
+    paragraph.style.display = "block";
+    button.textContent = "Hide";
+  } else {
+    paragraph.style.display = "none";
+    button.textContent = "Read More";
+  }
+});
+
+
+                 </script>    
+     
+                 <button class="btn-dark btn ps-3 pe-3" onclick="window.location.href='gallery.html'">See project photos</button>
+
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="w-100">
+                      <figure><img src="images/kozacar.jpg"></figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="container-fluid padding_dd">
+              <div class="carousel-caption">
+
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="text-bg">
+                      
+                      <h1 class="text-dark fw-light">Exquisite</h1>
+                     <p>
+                      Welcome to our cleaning company website! We are a leading provider of cleaning services in Uganda, with years of experience in delivering top-notch cleaning services to homes and businesses. Our commitment to excellence has made us a trusted name in the industry, and we are proud to serve our clients with the highest standards of cleanliness and professionalism.
+                     </p>
+                     <p class="fw-bold text-primary h4" style="font-style: italic;">
+"We leave your home/office sparkling clean"
+                     </p>
+                     <a href="gallery.html">SEE PICTORIAL</a> 
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="w-100">
+                      <figure><img src="images/logo.png" class="w-75"></figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</section>
+</div>
+</header>
+
+
+
+<!-- about  -->
+<div id="about" class="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <h2 class="display-4 text-primary py-3 bg-light">What we do
+          </h2>
+           
+          <p class="pb-3"> 
+            At our company, we offer a wide range of cleaning services to meet the needs of our clients. Whether you need general cleaning services for your office, specialized cleaning services for your restaurant, or residential cleaning services for your home, we've got you covered. Our team of skilled cleaners is equipped with the latest cleaning equipment and products to ensure that every corner of your space is cleaned to perfection.
+            <br>
+
+           
+          </p>
+          <a href="contact.html" class="btn btn-primary">Contact us</a>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
+        <div class="about-box_img">
+          <figure><img src="images/about.jpg" alt="#" /></figure>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end abouts -->
+
+
+
+<!-- vegetable -->
+<div id="services" class="services">
+  <section class="services-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-broom display-3"></i><br>Cleaning Services</h4>
+              <p class="card-text">We offer a wide range of cleaning services for homes, offices, and commercial spaces. Our team is trained to provide efficient and thorough cleaning services that leave your space spotless.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-soap display-3"></i><br>Laundry Services</h4>
+              <p class="card-text">We provide professional laundry services for individuals, hotels, and other businesses. Our team ensures that your clothes are cleaned, ironed, and folded to perfection.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-hand-sparkles display-3"></i><br>Sanitization Services</h4>
+              <p class="card-text">We use high-quality sanitization products and techniques to ensure that your space is free from germs and bacteria. Our team is trained to provide safe and effective sanitization services.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-tools display-3"></i><br>Maintenance Services</h4>
+              <p class="card-text">We provide a variety of maintenance services, including painting, plumbing, and electrical work. Our team is skilled and experienced in handling a range of maintenance tasks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-window-restore display-3"></i><br>Window Cleaning Services</h4>
+              <p class="card-text">We specialize in providing high-quality window cleaning services for both residential and commercial properties. Our team uses specialized equipment and techniques to ensure that your windows are sparkling clean.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h4 class="card-title h3 text-primary"><i class="fas fa-car display-3"></i><br>Car Cleaning Services</h4>
+              <p class="card-text">We offer professional car cleaning services, including interior and exterior cleaning, detailing, and waxing. Our team is equipped with the tools and products necessary to make your car shine like new.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+</div>
+    <!-- end contact -->
+
+    <!--  footer -->
+    <footr>
+      <div class="footer ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+             <a href="#" class="logo_footer"> <img src="images/logow.png" alt="#" width="100px"/></a>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
+                  <div class="address">
+                    <h3 id="contact">Contact us</h3>
+                    <ul class="loca">
+                      <li>
+                        <a href="#" class="text-warning"></a>We shall be glad to hear from you 
+                         </li>
+                        <li>
+                          Tel: 0742 104 760 ,    0774 196913</li>
+                          <li>
+                            Email: kozahomeservices@gmail.com</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="address">
+                          <h3>Address</h3>
+                          <ul class="Menu_footer">
+                            <li class="active"> <a class="text-white">Kampala (U)</a> </li>
+                           
+                          
+                          </ul>
+                        </div>
+                      </div>
+                     
+
+               
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="copyright btn-primary">
+          <p class="text-center mb-3">
+            <a href="#top" class="btn mx-auto btn-light text-dark text-center">Back to top</a>
+           
+          </p>           <div class="container ">
+                  <p>Website designed by <a href="https://ayshinventions.com">Aysh Inventions Ltd</a></p>
+                </div>
+              </div>
+            </div>
+          </footr>
+          <!-- end footer -->
+          <!-- Javascript files-->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/jquery-3.0.0.min.js"></script>
+          <script src="js/plugin.js"></script>
+          <!-- sidebar -->
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="js/custom.js"></script>
+          <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+ 
+
+
+</body>
+
+</html>
