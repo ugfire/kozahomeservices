@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter Feed</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row" id="tweet-row">
+			<!-- Tweets will be dynamically added here -->
+		</div>
+		<p id="error-message" class="text-danger"></p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Your Twitter API credentials
+			const consumerKey = 'YOUR_CONSUMER_KEY';
+			const consumerSecret = 'YOUR_CONSUMER_SECRET';
+			const accessToken = 'YOUR_ACCESS_TOKEN';
+			const accessTokenSecret = 'YOUR_ACCESS_TOKEN_SECRET';
+
+			// Fetch the tweets
+			$.ajax({
+				url: 'https://api.twitter.com/1.1/statuses/user_timeline.json',
+				type: 'GET',
+				dataType: 'jsonp',
+				data: {
+					screen_name: 'twitterhandle', // replace with the Twitter handle you want to display
+					count: 10 // number of tweets to display
+				},
+				beforeSend: function(xhr){
+					xhr.setRequestHeader('Authorization', 'OAuth oauth_consumer_key="' + consumerKey + '",oauth_nonce="' + Math.random().toString(36).substring(2) + '",oauth_signature="' + encodeURIComponent(consumerSecret) + '%26' + encodeURIComponent(accessTokenSecret) + '",oauth_signature_method="HMAC-SHA1",oauth_timestamp="' + Math.floor(Date.now() / 1000) + '",oauth_token="' + accessToken + '",oauth_version="1.0"');
+				},
+				success: function(data){
+					// Create HTML elements to display each tweet
+					let tweetRow = $('#tweet-row');
+					$.each(data, function(i, tweet){
+						let tweetHtml = '<div class="col-sm-6 col-md-4 mb-3">';
+						tweetHtml += '<div class="card">';
+						tweetHtml += '<div class="card-body">';
+						tweetHtml += '<p class="card-text">' + tweet.text + '</p>';
+						tweetHtml += '<a href="https://twitter.com/' + tweet.user.screen_name + '/status/' + tweet.id_str + '" target="_blank" class="btn btn-primary">View Tweet</a>';
+						tweetHtml += '</div></div></div>';
+						tweetRow.append(tweetHtml);
+					});
+				},
+				error: function(err){
+					$('#error-message').text('Error fetching tweets: ' + err.statusText);
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
