@@ -34,12 +34,27 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script src="https://kit.fontawesome.com/6e95959b6b.js" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KJXJBDQ3G"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slicebox/1.0.0/css/slicebox.css" />
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slicebox/1.0.0/js/jquery.slicebox.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+  .w3-animate-bottom {
+    animation-duration: 4s; /* Change the animation duration here */
+  }
+</style>
+
+
 </head>
 <!-- body -->
 
 <body class="main-layout bg-light">
 
-  <!-- header -->
+
   <header>
     <!-- header inner -->
   
@@ -57,37 +72,36 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-dark pr-5" href="index.html"><i class="fas fa-home text-primary pr-1" style="font-size: 130%;"></i> Home</a>
+              <a class="nav-link text-dark pr-5" href="index.html"><i class="fas fa-home lightblue  pr-1" style="font-size: 130%;"></i> Home</a>
             </li>
             <!--------------
             <li class="nav-item">
-              <a class="nav-link text-dark pr-5" href="#about"><i class="fas fa-info-circle text-primary pr-1" style="font-size: 130%;"></i> About</a>
+              <a class="nav-link text-dark pr-5" href="#about"><i class="fas fa-info-circle lightblue  pr-1" style="font-size: 130%;"></i> About</a>
             </li> -------->
             <li class="nav-item">
               <!-- Removed "Technology" option -->
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark pr-5" href="services.html"><i class="fas fa-cogs text-primary pr-1" style="font-size: 130%;"></i> Services</a>
+              <a class="nav-link text-dark pr-5" href="index.html#services"><i class="fas fa-cogs lightblue  pr-1" style="font-size: 130%;"></i> Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark pr-5" href="gallery.html"><i class="fas fa-images text-primary pr-1" style="font-size: 130%;"></i> Gallery</a>
+              <a class="nav-link text-dark pr-5" href="gallery.html"><i class="fas fa-images lightblue   pr-1" style="font-size: 130%;"></i> Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark pr-5" href="contact.html"><i class="fas fa-envelope text-primary pr-1" style="font-size: 130%;"></i> Contact Us</a>
+              <a class="nav-link text-dark pr-5" id="messagebutton"><i class="fas fa-envelope lightblue  pr-1" style="font-size: 130%;"></i> Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark pr-5" href="login.html"><i class="fas fa-lock text-primary pr-1" style="font-size: 130%;"></i> Admin</a>
+              <a class="nav-link text-dark pr-5" href="login.html"><i class="fas fa-lock lightblue   pr-1" style="font-size: 130%;"></i> Admin</a>
             </li>
           </ul>
 
-          <a class="nav-link text-dark btn btn-lg btn-primary pr-5" href="contact.html"><i class="fa-solid fa-message text-white pr-1" style="font-size: 130%;"></i> Hire us</a>
-       
+           
         </div>
       </div>
     </nav>
     </header>
 
-<h2 class="p-3 fw-bold  bg-primary text-white">Koza Home Services in pictures</h2>
+<h2 class="p-3 fw-bold  darkbluebg text-white">Koza Home Services in pictures</h2>
 <div class="row m-0 p-0">
 
    <div class="col-md-4 m-0">
@@ -120,20 +134,28 @@
 <!------------------------------INSTAGRAM FEEDS------------------------------->
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <div class="elfsight-app-632f8b1c-5a4b-47bb-85b3-824ddbedb121"></div>
-    <!--  footer -->
+
 
     <!--  footer -->
     <footr>
-      <div class="footer ">
+      <div class="footer darkbluebg ">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
              <a href="#" class="logo_footer"> <img src="images/logow.png" alt="#" width="100px"/></a>
+             <div class="col-md-6 bg-light">
+              <h4 class="h6">
+                <a class="nav-link text-dark pr-5 " href="TEL:+256742104760"><i class="fa-solid fa-phone text-primary pr-1" style="font-size: 130%;"></i><i class="fa-brands fa-whatsapp text-success" style="font-size: 130%;"></i> 0742 104760</a>
+                 </h4>  
+                 <h4 class="h6">
+                  <a class="nav-link text-dark pr-5 " href="TEL:+256774 196913"><i class="fa-solid fa-phone text-primary pr-1" style="font-size: 130%;"></i><i class="fa-brands fa-whatsapp text-success" style="font-size: 130%;"></i> 0774 196913</a>
+                   </h4>       </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
               <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ">
                   <div class="address">
+                    
                     <h3 id="contact">Contact us</h3>
                     <ul class="loca">
                       <li>
@@ -150,7 +172,7 @@
                         <div class="address">
                           <h3>Address</h3>
                           <ul class="Menu_footer">
-                            <li class="active"> <a class="text-white">Kampala (U)</a> </li>
+                            <li class=""> <a class="text-white">Kampala (U)</a> </li>
                            
                           
                           </ul>
@@ -165,7 +187,7 @@
                 </div>
 
               </div>
-              <div class="copyright btn-primary">
+              <div class="copyright lightbluebg">
           <p class="text-center mb-3">
             <a href="#top" class="btn mx-auto btn-light text-dark text-center">Back to top</a>
            
@@ -175,12 +197,69 @@
               </div>
             </div>
           </footr>
-          <!-- end footer -->
-          <!-- Javascript files-->
-
-
+          <!-- SCRIPT FOR THE POPUP-->
+          <script>
+            document.getElementById("messagebutton").addEventListener("click", function() {
+              swal.fire({
+                  title: "Send us a message",
+                  html: `
+                    <input id="swal-input1" class="swal2-input" placeholder="Name">
+                    <input id="swal-input2" class="swal2-input" placeholder="Email">
+                    <input id="swal-input3" class="swal2-input" placeholder="Phone">
+                    <textarea  id="swal-input4" type="text" class="swal2-input" placeholder="Message"></textarea>
+                    <input type="hidden" id="swal-input5" value="${new Date().toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })}">
+                  `,
+                  showCancelButton: true,
+                  cancelButtonText: "Cancel",
+                  confirmButtonText: "Submit",
+                  confirmButtonClass: "darkbluebg text-white", // Add class here
+                  cancelButtonClass: "bg-danger text-white", // Add class here
+                  preConfirm: () => {
+              let hasSubmitted = false;
+              const name = document.getElementById('swal-input1').value;
+              const email = document.getElementById('swal-input2').value;
+              const phone = document.getElementById('swal-input3').value;
+              const message = document.getElementById('swal-input4').value;
+              const timestamp = document.getElementById('swal-input5').value;
+              const data = { name: name, email: email, phone: phone, message: message, time: timestamp };
+              if (name === '' || email === '' || phone === '' || message === '') {
+                swal.showValidationMessage("Please fill in all fields");
+                return;
+              }
+            
+              if (hasSubmitted) {
+                return;
+              }
+              hasSubmitted = true;
+              fetch("https://sheetdb.io/api/v1/xk4526495z3zp", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+              })
+                .then(response => response.json())
+                .then(data => {
+                  swal.fire({
+                    title: "Success",
+                    text: "Your message has been sent!",
+                    icon: "success",
+                  });
+                })
+                .catch(error => {
+                  swal.fire({
+                    title: "Error",
+                    text: "An error occurred. Please try again later.",
+                    icon: "error",
+                  });
+                });
+            },
+            
+                });
+            });
+            </script>
+ 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-          <!-- GetButton.io widget -->
+          <script src="js/hero-slider-main.js"></script>
+
 <script type="text/javascript">
   (function () {
       var options = {
@@ -196,7 +275,6 @@
       var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
   })();
 </script>
-<!-- /GetButton.io widget -->
 
 </body>
 
