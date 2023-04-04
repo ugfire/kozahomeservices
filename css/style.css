@@ -1367,7 +1367,7 @@ font-weight: bold;
 padding-bottom: 20px;
 }
  .location_section {
-     background-color: #fff;
+     background-color: transparent !important;
      margin-bottom: 40px;
      border-radius: 10px;
      padding: 20px 35px;
@@ -1444,7 +1444,7 @@ transition: all 0.3s ease-in;
  
 
  ul.loca li {
-     color: #fcfbfb;
+     color: #fcfbfb !important;
      display: flex;
      font-size: 16px;
      flex-wrap: wrap;
